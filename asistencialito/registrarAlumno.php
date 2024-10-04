@@ -9,19 +9,21 @@
 
 <body>
     <div id="container_titulo">
-        <a href="#" class="alumnos" onclick="mostrarAlumnos()">Alumnos</a>
+        <h3>Asistencialito Alumnos</h3>
     </div>
 
-    <div id="mostrar">
-
-    </div>
-
+    
     <div id="container_asistencia">
-        <a href="" class="tomar">Tomar Asistencia</a>
+     <a href="#" class="alumnos" onclick="mostrarAlumnos()">Tomar asistencia alumnos</a>
+        
     </div>
 
     <div id="container_crear">
     <a href="crearAlumno.php" class="crear"> Crear Alumnos </a>
+    </div>
+
+    <div id="mostrar_alumnos">
+
     </div>
 
     <div id="container_salir">

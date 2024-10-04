@@ -26,7 +26,6 @@ require_once 'conexion.php';
     <?php
 
     if(count($resultado) > 0){
-
         foreach ($resultado as $row){
             echo "<option value='" . $row['id_materia'] . "'>" . $row['nombre_materia'] . "</option>"; 
         }

@@ -17,6 +17,8 @@
     <br>
     <input type="date" name="fecha_nacimiento_alumno" id="fecha_nacimiento_alumno" placeholder="Fecha de nacimiento">
     <br>
+    <input type="text" name="email_alumno" id="email_alumno" placeholder="Email del alumno">
+    <br>
     <input type="submit" name="submit" value="Registrarse">
     </form>
 
