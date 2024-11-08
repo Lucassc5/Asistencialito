@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container_titulo {
+    width: 99%;
+    background-color: #00796b; 
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.mostrarAlumnos{
+    background-color: #0288d1;
+}
+
+
+.alumnos, .crear, .notasAlumnos, .estado {
+    background-color: #0288d1; 
+}
+
+.salir {
+    background-color: #d32f2f; 
+}
+
+#container_alumnos,
+#container_crear {
+    width: 200px;
+    position: absolute;
+    left: 20px;
+}
+
+#container_alumnos {
+    top: 100px;
+}
+
+#container_crear {
+    top: 160px;
+}
+
+#container_asistencia,
+#container_notas,
+#container_estado {
+    width: 200px;
+    position: absolute;
+    right: 20px;
+}
+
+#container_asistencia {
+    top: 100px;
+}
+
+#container_notas {
+    top: 160px;
+}
+
+#container_estado {
+    top: 220px;
+}
+
+#container_salir {
+    width: 100px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.estado {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+input[type="number"]{
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
