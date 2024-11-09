@@ -30,13 +30,13 @@ if (!$datosAlumno) {
 
         <input type="hidden" name="id_alumno" value="<?php echo htmlspecialchars($datosAlumno['id_alumno']); ?>">
         <br>
-        Nombre: <input type="text" name="nombre_alumno" value="<?php echo htmlspecialchars($datosAlumno['nombre_alumno']); ?>" maxlength="15">
+        Nombre: <input type="text" name="nombre_alumno" value="<?php echo htmlspecialchars($datosAlumno['nombre_alumno']); ?>" >
         <br>
-        Apellido: <input type="text" name="apellido_alumno" value="<?php echo htmlspecialchars($datosAlumno['apellido_alumno']); ?>" maxlength="15">
+        Apellido: <input type="text" name="apellido_alumno" value="<?php echo htmlspecialchars($datosAlumno['apellido_alumno']); ?>" >
         <br>
         Fecha de Nacimiento: <input type="date" name="fecha_nacimiento_alumno" value="<?php echo htmlspecialchars($datosAlumno['fecha_nacimiento_alumno']); ?>">
         <br>
-        DNI: <input type="text" name="dni_alumno" value="<?php echo htmlspecialchars($datosAlumno['dni_alumno']); ?>" maxlength="8">
+        DNI: <input type="text" name="dni_alumno" value="<?php echo htmlspecialchars($datosAlumno['dni_alumno']); ?>" >
         <br>
         <button type="submit">Guardar Cambios</button>
         

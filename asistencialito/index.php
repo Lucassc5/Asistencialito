@@ -11,15 +11,13 @@
     <form action="mainProfesor.php" method="post" id="formulario">
 
         <h1> Asistencialito </h1>
-        <input type="email" name="email_profesor" id="email_profesor" placeholder="Email" maxlength="30" required>
+        <input type="email" name="email_profesor" id="email_profesor" placeholder="Email"  required>
         <br>
-        <input type="password" name="contrasena_profesor" id="contrasena_profesor" placeholder="Contraseña" minlength="6" maxlength="15" required>
+        <input type="password" name="contrasena_profesor" id="contrasena_profesor" placeholder="Contraseña" required>
         <br>
         <div id="respuesta">
         </div>
         <input type="submit" name="submit" value="Ingresar">
-        <p>¿No estas registado?</p>
-        <a href="formularioRegistro.php">Registrar</a>
 
     </form>
 

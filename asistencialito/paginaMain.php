@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Asistencialito</title>
     <link rel="stylesheet" href="Resources/Styles/paginaMain.css">
 </head>
 <body>
     <div id="container_titulo">
         <marquee><h3>Asistencialito Alumnos</h3></marquee>
     </div>
-
 
     <div id="container_asistencia">
      <a href="#" class="alumnos" onclick="mostrarAlumnos()">Tomar Asistencia Alumnos</a>
