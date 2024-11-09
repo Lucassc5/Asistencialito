@@ -19,8 +19,6 @@ Ve a "Archivo" y selecciona "Ejecutar archivo SQL".
 Busca el archivo script.sql que se encuentra dentro de la carpeta instalada y ejecútalo.
 
 -Iniciar Sesion con los siguientes datos:
-
 	javier@gmail.com
- 
 	javier123
 -Y ya podes utilizar Asistencialito.
