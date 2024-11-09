@@ -39,11 +39,17 @@
 
     <div id="container_estado">
         <form action="mostrarEstado.php" method="post">
-            <input type="number" id="diasTotales" name="diasTotales" placeholder="Ingresar Dias Total de Clases" required>
+            <input type="number" id="diasTotales" name="diasTotales" placeholder="Ingresar Dias Total de Clases" min="0" max="200" required>
             <input type="submit" id="estado" class="estado" value="Mostrar Estado">
         </form>
     </div>
     <div id="mostrar_estado">
+    </div>
+
+    <div id="container_ram">
+        <a href="editarRam.php" class="ram" >RAM</a>
+    </div>
+    <div id="ram">
     </div>
 
     <div id="container_salir">

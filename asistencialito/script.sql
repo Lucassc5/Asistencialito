@@ -2,7 +2,7 @@ CREATE DATABASE IF NOT EXISTS asistencialito;
 
 USE asistencialito;
 
--- Tabla de Instituciones
+
 CREATE TABLE IF NOT EXISTS institucion (
     id_institucion INT AUTO_INCREMENT PRIMARY KEY,
     nombre_institucion VARCHAR(100) UNIQUE,
@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS institucion (
     cue INT(10)
 );
 
--- Tabla de Materias
+
 CREATE TABLE IF NOT EXISTS materias (
     id_materia INT AUTO_INCREMENT PRIMARY KEY,
     nombre_materia VARCHAR(255),
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS materias (
     FOREIGN KEY (id_institucion) REFERENCES institucion(id_institucion) ON DELETE CASCADE
 );
 
--- Tabla de Alumnos
+
 CREATE TABLE IF NOT EXISTS alumnos ( 
     id_alumno INT AUTO_INCREMENT PRIMARY KEY, 
     nombre_alumno VARCHAR(50), 
@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS alumnos (
     FOREIGN KEY (id_materia) REFERENCES materias(id_materia) ON DELETE CASCADE
 );
 
--- Tabla de Profesores
+
 CREATE TABLE IF NOT EXISTS profesores (
     id_profesor INT AUTO_INCREMENT PRIMARY KEY,
     email_profesor VARCHAR(255),
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS profesores (
     legajo VARCHAR(20) UNIQUE
 );
 
--- Tabla de Asistencias
+
 CREATE TABLE IF NOT EXISTS asistencias (
     id_asistencia INT AUTO_INCREMENT PRIMARY KEY,
     id_alumno INT,
@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS asistencias (
     FOREIGN KEY (id_materia) REFERENCES materias(id_materia) ON DELETE CASCADE
 );
 
--- Tabla de Notas
+
 CREATE TABLE IF NOT EXISTS notas (
     id_nota INT AUTO_INCREMENT PRIMARY KEY,
     id_alumno INT,
@@ -63,8 +63,9 @@ CREATE TABLE IF NOT EXISTS notas (
     FOREIGN KEY (id_materia) REFERENCES materias (id_materia) ON DELETE CASCADE
 );
 
--- Tabla de Parámetros de Ram
+
 CREATE TABLE IF NOT EXISTS ram (
+    id_ram int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nota_libre DECIMAL(5,2),
     nota_regular DECIMAL(5,2),
     nota_promocion DECIMAL(5,2),
@@ -72,7 +73,7 @@ CREATE TABLE IF NOT EXISTS ram (
     porcentaje_promocion DECIMAL(5,2)
 );
 
--- Inserción de datos de ejemplo
+
 INSERT INTO institucion (nombre_institucion, direccion_institucion, cue) VALUES 
 ('Sedes', 'santa fe', 123);
 

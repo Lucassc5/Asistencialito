@@ -11,9 +11,9 @@
     <form action="mainProfesor.php" method="post" id="formulario">
 
         <h1> Asistencialito </h1>
-        <input type="email" name="email_profesor" id="email_profesor" placeholder="Email"  required>
+        <input type="email" name="email_profesor" id="email_profesor" placeholder="Email" maxlength="30" required>
         <br>
-        <input type="password" name="contrasena_profesor" id="contrasena_profesor" placeholder="Contraseña" required>
+        <input type="password" name="contrasena_profesor" id="contrasena_profesor" placeholder="Contraseña" minlength="6" maxlength="15" required>
         <br>
         <div id="respuesta">
         </div>

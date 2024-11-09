@@ -26,17 +26,17 @@ if (!$datosAlumno) {
 
         <h2>Editar Alumno</h2>
 
-    <form action="../Guardar/guardarAlumnoEditado.php" method="POST">
+    <form action="Guardar/guardarAlumnoEditado.php" method="POST">
 
         <input type="hidden" name="id_alumno" value="<?php echo htmlspecialchars($datosAlumno['id_alumno']); ?>">
         <br>
-        Nombre: <input type="text" name="nombre_alumno" value="<?php echo htmlspecialchars($datosAlumno['nombre_alumno']); ?>" >
+        Nombre: <input type="text" name="nombre_alumno" value="<?php echo htmlspecialchars($datosAlumno['nombre_alumno']); ?>" maxlength="15" required>
         <br>
-        Apellido: <input type="text" name="apellido_alumno" value="<?php echo htmlspecialchars($datosAlumno['apellido_alumno']); ?>" >
+        Apellido: <input type="text" name="apellido_alumno" value="<?php echo htmlspecialchars($datosAlumno['apellido_alumno']); ?>" maxlength="15" required>
         <br>
         Fecha de Nacimiento: <input type="date" name="fecha_nacimiento_alumno" value="<?php echo htmlspecialchars($datosAlumno['fecha_nacimiento_alumno']); ?>">
         <br>
-        DNI: <input type="text" name="dni_alumno" value="<?php echo htmlspecialchars($datosAlumno['dni_alumno']); ?>" >
+        DNI: <input type="text" name="dni_alumno" value="<?php echo htmlspecialchars($datosAlumno['dni_alumno']); ?>" maxlength="8" required>
         <br>
         <button type="submit">Guardar Cambios</button>
         

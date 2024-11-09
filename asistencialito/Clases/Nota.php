@@ -33,21 +33,6 @@ class Notas {
         return $stmt->execute();
     }
     
-    function editarNotas($id_materia, $id_alumno, $nota1, $nota2, $nota3) {
-        global $conn;
-        $query = "UPDATE notas SET nota1 = :nota1, nota2 = :nota2, nota3 = :nota3 
-                  WHERE id_alumno = :id_alumno AND id_materia = :id_materia";
-        
-        $stmt = $conn->prepare($query);
-        $stmt->bindParam(':id_alumno', $id_alumno, PDO::PARAM_STR);
-        $stmt->bindParam(':id_materia', $id_materia, PDO::PARAM_STR);
-        $stmt->bindParam(':nota1', $nota1);
-        $stmt->bindParam(':nota2', $nota2);
-        $stmt->bindParam(':nota3', $nota3);
-        
-
-        return $stmt->execute();
-    }
 
     public function obtenerNotas($id_alumno, $id_materia) {
         global $conn;

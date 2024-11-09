@@ -15,7 +15,7 @@
 
         <input type="email" name="email_profesor" id="email_profesor" placeholder="Email" maxlength="30" required>
         <br>
-        <input type="password" name="contrasena_profesor" id="contrasena_profesor" placeholder="Contraseña" minlength="6" maxlength="15" required>
+        <input type="password" name="contrasena_profesor" id="contrasena_profesor" placeholder="Contraseña" minlength="6" maxlengt="15" required>
         <br>
         <input type="text" name="nombre_profesor" id="nombre_profesor" placeholder="Nombre" maxlength="15" required> 
         <br>

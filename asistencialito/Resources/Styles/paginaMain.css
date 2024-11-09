@@ -37,7 +37,7 @@ a {
 }
 
 
-.alumnos, .crear, .notasAlumnos, .estado {
+.alumnos, .crear, .notasAlumnos, .estado, .ram {
     background-color: #0288d1; 
 }
 
@@ -46,18 +46,19 @@ a {
 }
 
 #container_alumnos,
-#container_crear {
+#container_crear,
+#container_ram {
     width: 200px;
     position: absolute;
     left: 20px;
 }
 
 #container_alumnos {
-    top: 100px;
+    top: 114px;
 }
 
 #container_crear {
-    top: 160px;
+    top: 68px;
 }
 
 #container_asistencia,
@@ -73,6 +74,10 @@ a {
 }
 
 #container_notas {
+    top: 160px;
+}
+
+#container_ram {
     top: 160px;
 }
 

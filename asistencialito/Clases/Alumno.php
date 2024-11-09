@@ -28,7 +28,7 @@
         }
         
 
-        function editarAlumno($id_alumno, $nombre_alumno, $apellido_alumno, $fecha_nacimiento_alumno, $dni_alumno, $conn) {
+        function editarRam($id_alumno, $nombre_alumno, $apellido_alumno, $fecha_nacimiento_alumno, $dni_alumno, $conn) {
             
             $sql = "UPDATE alumnos SET nombre_alumno = :nombre_alumno, apellido_alumno = :apellido_alumno, fecha_nacimiento_alumno = :fecha_nacimiento_alumno, dni_alumno = :dni_alumno WHERE id_alumno = :id_alumno";
             
