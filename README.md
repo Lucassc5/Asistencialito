@@ -20,5 +20,6 @@ Busca el archivo script.sql que se encuentra dentro de la carpeta instalada y ej
 
 -Iniciar Sesion con los siguientes datos:
 	javier@gmail.com
-	javier123
+	
+ javier123
 -Y ya podes utilizar Asistencialito.
